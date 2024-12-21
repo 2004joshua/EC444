@@ -1,0 +1,6 @@
+{
+    "idf.port": "/dev/tty.usbserial-01746A42",
+    "files.associations": {
+        "freertos.h": "c"
+    }
+}

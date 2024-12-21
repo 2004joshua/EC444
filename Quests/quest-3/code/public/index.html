@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP Data Visualization</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <h1>ESP Data Visualization</h1>
+    <canvas id="espChart" width="800" height="400"></canvas>
+
+    <h2 id="resting-leader">Resting Leader: Calculating...</h2>
+    <h2 id="active-leader">Active Leader: Calculating...</h2>
+    <h2 id="highly-active-leader">Highly Active Leader: Calculating...</h2>
+
+    <script>
+        const socket = io();
+        const ctx = document.getElementById('espChart').getContext('2d');
+
+        // Leader display elements
+        const restingLeaderDisplay = document.getElementById('resting-leader');
+        const activeLeaderDisplay = document.getElementById('active-leader');
+        const highlyActiveLeaderDisplay = document.getElementById('highly-active-leader');
+
+        // Initialize Chart.js
+        const chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: [],
+                datasets: [
+                    {
+                        label: 'Resting Time',
+                        data: [],
+                        backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                    },
+                    {
+                        label: 'Active Time',
+                        data: [],
+                        backgroundColor: 'rgba(75, 192, 192, 0.6)',
+                    },
+                    {
+                        label: 'Highly Active Time',
+                        data: [],
+                        backgroundColor: 'rgba(255, 99, 132, 0.6)',
+                    },
+                ],
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: { title: { display: true, text: 'Device' } },
+                    y: { title: { display: true, text: 'Time (s)' } },
+                },
+            },
+        });
+
+        // Listen for updates from the server
+        socket.on('update', (data) => {
+            const { espData, leaders } = data;
+
+            const labels = Object.keys(espData);
+            const restingTimes = labels.map((device) => espData[device].resting_time);
+            const activeTimes = labels.map((device) => espData[device].active_time);
+            const highlyActiveTimes = labels.map((device) => espData[device].highly_active_time);
+
+            // Update Chart.js
+            chart.data.labels = labels;
+            chart.data.datasets[0].data = restingTimes;
+            chart.data.datasets[1].data = activeTimes;
+            chart.data.datasets[2].data = highlyActiveTimes;
+            chart.update();
+
+            // Update Leader Displays
+            if (leaders.resting) {
+                restingLeaderDisplay.textContent = `Resting Leader: ${leaders.resting.device_name} (Time: ${leaders.resting.maxTime}s)`;
+            }
+            if (leaders.active) {
+                activeLeaderDisplay.textContent = `Active Leader: ${leaders.active.device_name} (Time: ${leaders.active.maxTime}s)`;
+            }
+            if (leaders.highly_active) {
+                highlyActiveLeaderDisplay.textContent = `Highly Active Leader: ${leaders.highly_active.device_name} (Time: ${leaders.highly_active.maxTime}s)`;
+            }
+        });
+    </script>
+</body>
+</html>

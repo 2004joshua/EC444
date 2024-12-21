@@ -1,0 +1,3 @@
+/Users/joshuaarrevillaga/Desktop/Arrevillaga-Joshua/skills/cluster-4/27/code/state_machine/cmake-build-debug/CMakeFiles/state_machine.dir
+/Users/joshuaarrevillaga/Desktop/Arrevillaga-Joshua/skills/cluster-4/27/code/state_machine/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/joshuaarrevillaga/Desktop/Arrevillaga-Joshua/skills/cluster-4/27/code/state_machine/cmake-build-debug/CMakeFiles/rebuild_cache.dir

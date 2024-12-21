@@ -1,0 +1,63 @@
+void udp_wasd_server_task(void *pvParameters) {
+    char rx_buffer[128];
+    struct sockaddr_in dest_addr;
+    dest_addr.sin_addr.s_addr = htonl(INADDR_ANY);
+    dest_addr.sin_family = AF_INET;
+    dest_addr.sin_port = htons(WASD_PORT);
+
+    int sock = socket(AF_INET, SOCK_DGRAM, IPPROTO_IP);
+    if (sock < 0) {
+        ESP_LOGE(TAG, "Unable to create socket: errno %d", errno);
+        vTaskDelete(NULL);
+        return;
+    }
+    ESP_LOGI(TAG, "Socket created");
+
+    if (bind(sock, (struct sockaddr *)&dest_addr, sizeof(dest_addr)) < 0) {
+        ESP_LOGE(TAG, "Socket unable to bind: errno %d", errno);
+        close(sock);
+        vTaskDelete(NULL);
+        return;
+    }
+    ESP_LOGI(TAG, "Socket bound, port %d", WASD_PORT);
+
+    while (1) {
+        ESP_LOGI(TAG, "Waiting for data...");
+        struct sockaddr_in source_addr;
+        socklen_t socklen = sizeof(source_addr);
+
+        int len = recvfrom(sock, rx_buffer, sizeof(rx_buffer) - 1, 0,
+                           (struct sockaddr *)&source_addr, &socklen);
+
+        if (len < 0) {
+            ESP_LOGE(TAG, "recvfrom failed: errno %d", errno);
+            break;
+        } else {
+            rx_buffer[len] = '\0'; // Null-terminate input
+            wasd = rx_buffer[0];   // Update global WASD input
+            ESP_LOGI(TAG, "Received %d bytes from %s: %s",
+                     len, inet_ntoa(source_addr.sin_addr), rx_buffer);
+            if(wasd == 'e') {
+                switch(car_type_state) {
+                    case OPTITRACK_CONTROL:
+                        car_type_state = REMOTE_CONTROL; 
+                        ESP_LOGI(TAG, "Entering Remote control mode..."); 
+                        break;
+
+                    case REMOTE_CONTROL:
+                        car_type_state = OPTITRACK_CONTROL; 
+                        ESP_LOGI(TAG, "Entering Optitrack mode..."); 
+                        break;
+                }
+            }
+            reset_timeout_timer(); // Reset the timeout timer
+        }
+    }
+
+    if (sock != -1) {
+        ESP_LOGE(TAG, "Shutting down socket and restarting...");
+        shutdown(sock, 0);
+        close(sock);
+    }
+    vTaskDelete(NULL);
+}

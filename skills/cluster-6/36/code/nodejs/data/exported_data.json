@@ -1,0 +1,562 @@
+[
+  {
+    "time": 1000,
+    "sensor_id": 1,
+    "smoke": false,
+    "temperature": 30.99551665,
+    "_id": 2
+  },
+  {
+    "time": 1000,
+    "sensor_id": 2,
+    "smoke": false,
+    "temperature": 32.61403901,
+    "_id": 3
+  },
+  {
+    "time": 1000,
+    "sensor_id": 3,
+    "smoke": false,
+    "temperature": 34.24155482,
+    "_id": 4
+  },
+  {
+    "time": 1000,
+    "sensor_id": 4,
+    "smoke": false,
+    "temperature": 33.93040826,
+    "_id": 5
+  },
+  {
+    "time": 1000,
+    "sensor_id": 5,
+    "smoke": false,
+    "temperature": 32.16053975,
+    "_id": 6
+  },
+  {
+    "time": 2000,
+    "sensor_id": 1,
+    "smoke": true,
+    "temperature": 39.84993413,
+    "_id": 7
+  },
+  {
+    "time": 2000,
+    "sensor_id": 2,
+    "smoke": true,
+    "temperature": 39.15895748,
+    "_id": 8
+  },
+  {
+    "time": 2000,
+    "sensor_id": 3,
+    "smoke": true,
+    "temperature": 35.31320566,
+    "_id": 9
+  },
+  {
+    "time": 2000,
+    "sensor_id": 4,
+    "smoke": false,
+    "temperature": 32.11712677,
+    "_id": 10
+  },
+  {
+    "time": 2000,
+    "sensor_id": 5,
+    "smoke": true,
+    "temperature": 37.6473977,
+    "_id": 11
+  },
+  {
+    "time": 3000,
+    "sensor_id": 1,
+    "smoke": false,
+    "temperature": 31.79126176,
+    "_id": 12
+  },
+  {
+    "time": 3000,
+    "sensor_id": 2,
+    "smoke": false,
+    "temperature": 34.59167108,
+    "_id": 13
+  },
+  {
+    "time": 3000,
+    "sensor_id": 3,
+    "smoke": true,
+    "temperature": 39.74621965,
+    "_id": 14
+  },
+  {
+    "time": 3000,
+    "sensor_id": 4,
+    "smoke": false,
+    "temperature": 32.78243087,
+    "_id": 15
+  },
+  {
+    "time": 3000,
+    "sensor_id": 5,
+    "smoke": false,
+    "temperature": 32.1985166,
+    "_id": 16
+  },
+  {
+    "time": 4000,
+    "sensor_id": 1,
+    "smoke": true,
+    "temperature": 38.92508781,
+    "_id": 17
+  },
+  {
+    "time": 4000,
+    "sensor_id": 2,
+    "smoke": true,
+    "temperature": 38.37565977,
+    "_id": 18
+  },
+  {
+    "time": 4000,
+    "sensor_id": 3,
+    "smoke": true,
+    "temperature": 36.13967757,
+    "_id": 19
+  },
+  {
+    "time": 4000,
+    "sensor_id": 4,
+    "smoke": false,
+    "temperature": 30.65310732,
+    "_id": 20
+  },
+  {
+    "time": 4000,
+    "sensor_id": 5,
+    "smoke": true,
+    "temperature": 36.15634141,
+    "_id": 21
+  },
+  {
+    "time": 5000,
+    "sensor_id": 1,
+    "smoke": false,
+    "temperature": 33.23812762,
+    "_id": 22
+  },
+  {
+    "time": 5000,
+    "sensor_id": 2,
+    "smoke": true,
+    "temperature": 38.79421257,
+    "_id": 23
+  },
+  {
+    "time": 5000,
+    "sensor_id": 3,
+    "smoke": false,
+    "temperature": 32.52665853,
+    "_id": 24
+  },
+  {
+    "time": 5000,
+    "sensor_id": 4,
+    "smoke": false,
+    "temperature": 32.51121025,
+    "_id": 25
+  },
+  {
+    "time": 5000,
+    "sensor_id": 5,
+    "smoke": true,
+    "temperature": 36.72009154,
+    "_id": 26
+  },
+  {
+    "time": 6000,
+    "sensor_id": 1,
+    "smoke": false,
+    "temperature": 32.05246,
+    "_id": 27
+  },
+  {
+    "time": 6000,
+    "sensor_id": 2,
+    "smoke": false,
+    "temperature": 30.20902714,
+    "_id": 28
+  },
+  {
+    "time": 6000,
+    "sensor_id": 3,
+    "smoke": false,
+    "temperature": 30.72132803,
+    "_id": 29
+  },
+  {
+    "time": 6000,
+    "sensor_id": 4,
+    "smoke": false,
+    "temperature": 32.74850913,
+    "_id": 30
+  },
+  {
+    "time": 6000,
+    "sensor_id": 5,
+    "smoke": true,
+    "temperature": 37.99525648,
+    "_id": 31
+  },
+  {
+    "time": 7000,
+    "sensor_id": 1,
+    "smoke": false,
+    "temperature": 32.43955357,
+    "_id": 32
+  },
+  {
+    "time": 7000,
+    "sensor_id": 2,
+    "smoke": false,
+    "temperature": 30.80847236,
+    "_id": 33
+  },
+  {
+    "time": 7000,
+    "sensor_id": 3,
+    "smoke": false,
+    "temperature": 35.55775796,
+    "_id": 34
+  },
+  {
+    "time": 7000,
+    "sensor_id": 4,
+    "smoke": false,
+    "temperature": 32.59427507,
+    "_id": 35
+  },
+  {
+    "time": 7000,
+    "sensor_id": 5,
+    "smoke": false,
+    "temperature": 33.09164948,
+    "_id": 36
+  },
+  {
+    "time": 8000,
+    "sensor_id": 1,
+    "smoke": false,
+    "temperature": 32.53844413,
+    "_id": 37
+  },
+  {
+    "time": 8000,
+    "sensor_id": 2,
+    "smoke": true,
+    "temperature": 35.42446473,
+    "_id": 38
+  },
+  {
+    "time": 8000,
+    "sensor_id": 3,
+    "smoke": false,
+    "temperature": 33.32221928,
+    "_id": 39
+  },
+  {
+    "time": 8000,
+    "sensor_id": 4,
+    "smoke": true,
+    "temperature": 39.43899699,
+    "_id": 40
+  },
+  {
+    "time": 8000,
+    "sensor_id": 5,
+    "smoke": false,
+    "temperature": 30.02392797,
+    "_id": 41
+  },
+  {
+    "time": 1000,
+    "sensor_id": 1,
+    "smoke": false,
+    "temperature": 30.99551665,
+    "_id": 42
+  },
+  {
+    "time": 1000,
+    "sensor_id": 2,
+    "smoke": false,
+    "temperature": 32.61403901,
+    "_id": 43
+  },
+  {
+    "time": 1000,
+    "sensor_id": 3,
+    "smoke": false,
+    "temperature": 34.24155482,
+    "_id": 44
+  },
+  {
+    "time": 1000,
+    "sensor_id": 4,
+    "smoke": false,
+    "temperature": 33.93040826,
+    "_id": 45
+  },
+  {
+    "time": 1000,
+    "sensor_id": 5,
+    "smoke": false,
+    "temperature": 32.16053975,
+    "_id": 46
+  },
+  {
+    "time": 2000,
+    "sensor_id": 1,
+    "smoke": true,
+    "temperature": 39.84993413,
+    "_id": 47
+  },
+  {
+    "time": 2000,
+    "sensor_id": 2,
+    "smoke": true,
+    "temperature": 39.15895748,
+    "_id": 48
+  },
+  {
+    "time": 2000,
+    "sensor_id": 3,
+    "smoke": true,
+    "temperature": 35.31320566,
+    "_id": 49
+  },
+  {
+    "time": 2000,
+    "sensor_id": 4,
+    "smoke": false,
+    "temperature": 32.11712677,
+    "_id": 50
+  },
+  {
+    "time": 2000,
+    "sensor_id": 5,
+    "smoke": true,
+    "temperature": 37.6473977,
+    "_id": 51
+  },
+  {
+    "time": 3000,
+    "sensor_id": 1,
+    "smoke": false,
+    "temperature": 31.79126176,
+    "_id": 52
+  },
+  {
+    "time": 3000,
+    "sensor_id": 2,
+    "smoke": false,
+    "temperature": 34.59167108,
+    "_id": 53
+  },
+  {
+    "time": 3000,
+    "sensor_id": 3,
+    "smoke": true,
+    "temperature": 39.74621965,
+    "_id": 54
+  },
+  {
+    "time": 3000,
+    "sensor_id": 4,
+    "smoke": false,
+    "temperature": 32.78243087,
+    "_id": 55
+  },
+  {
+    "time": 3000,
+    "sensor_id": 5,
+    "smoke": false,
+    "temperature": 32.1985166,
+    "_id": 56
+  },
+  {
+    "time": 4000,
+    "sensor_id": 1,
+    "smoke": true,
+    "temperature": 38.92508781,
+    "_id": 57
+  },
+  {
+    "time": 4000,
+    "sensor_id": 2,
+    "smoke": true,
+    "temperature": 38.37565977,
+    "_id": 58
+  },
+  {
+    "time": 4000,
+    "sensor_id": 3,
+    "smoke": true,
+    "temperature": 36.13967757,
+    "_id": 59
+  },
+  {
+    "time": 4000,
+    "sensor_id": 4,
+    "smoke": false,
+    "temperature": 30.65310732,
+    "_id": 60
+  },
+  {
+    "time": 4000,
+    "sensor_id": 5,
+    "smoke": true,
+    "temperature": 36.15634141,
+    "_id": 61
+  },
+  {
+    "time": 5000,
+    "sensor_id": 1,
+    "smoke": false,
+    "temperature": 33.23812762,
+    "_id": 62
+  },
+  {
+    "time": 5000,
+    "sensor_id": 2,
+    "smoke": true,
+    "temperature": 38.79421257,
+    "_id": 63
+  },
+  {
+    "time": 5000,
+    "sensor_id": 3,
+    "smoke": false,
+    "temperature": 32.52665853,
+    "_id": 64
+  },
+  {
+    "time": 5000,
+    "sensor_id": 4,
+    "smoke": false,
+    "temperature": 32.51121025,
+    "_id": 65
+  },
+  {
+    "time": 5000,
+    "sensor_id": 5,
+    "smoke": true,
+    "temperature": 36.72009154,
+    "_id": 66
+  },
+  {
+    "time": 6000,
+    "sensor_id": 1,
+    "smoke": false,
+    "temperature": 32.05246,
+    "_id": 67
+  },
+  {
+    "time": 6000,
+    "sensor_id": 2,
+    "smoke": false,
+    "temperature": 30.20902714,
+    "_id": 68
+  },
+  {
+    "time": 6000,
+    "sensor_id": 3,
+    "smoke": false,
+    "temperature": 30.72132803,
+    "_id": 69
+  },
+  {
+    "time": 6000,
+    "sensor_id": 4,
+    "smoke": false,
+    "temperature": 32.74850913,
+    "_id": 70
+  },
+  {
+    "time": 6000,
+    "sensor_id": 5,
+    "smoke": true,
+    "temperature": 37.99525648,
+    "_id": 71
+  },
+  {
+    "time": 7000,
+    "sensor_id": 1,
+    "smoke": false,
+    "temperature": 32.43955357,
+    "_id": 72
+  },
+  {
+    "time": 7000,
+    "sensor_id": 2,
+    "smoke": false,
+    "temperature": 30.80847236,
+    "_id": 73
+  },
+  {
+    "time": 7000,
+    "sensor_id": 3,
+    "smoke": false,
+    "temperature": 35.55775796,
+    "_id": 74
+  },
+  {
+    "time": 7000,
+    "sensor_id": 4,
+    "smoke": false,
+    "temperature": 32.59427507,
+    "_id": 75
+  },
+  {
+    "time": 7000,
+    "sensor_id": 5,
+    "smoke": false,
+    "temperature": 33.09164948,
+    "_id": 76
+  },
+  {
+    "time": 8000,
+    "sensor_id": 1,
+    "smoke": false,
+    "temperature": 32.53844413,
+    "_id": 77
+  },
+  {
+    "time": 8000,
+    "sensor_id": 2,
+    "smoke": true,
+    "temperature": 35.42446473,
+    "_id": 78
+  },
+  {
+    "time": 8000,
+    "sensor_id": 3,
+    "smoke": false,
+    "temperature": 33.32221928,
+    "_id": 79
+  },
+  {
+    "time": 8000,
+    "sensor_id": 4,
+    "smoke": true,
+    "temperature": 39.43899699,
+    "_id": 80
+  },
+  {
+    "time": 8000,
+    "sensor_id": 5,
+    "smoke": false,
+    "temperature": 30.02392797,
+    "_id": 81
+  }
+]

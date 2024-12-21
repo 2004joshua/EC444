@@ -1,0 +1,13 @@
+.chart {
+  width: 45%;
+  height: 300px;
+  display: inline-block;
+}
+
+.text {
+  width: 45%;
+  height: 300px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
